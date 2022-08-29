@@ -1,0 +1,31 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.container{
+
+	h4{
+		color: $lavenderFloral;
+		margin-bottom: 1rem;
+		border-bottom: .1rem solid $lightGray;
+
+		@include responsive(desktop){
+			margin-bottom: 2rem;
+		}
+	}
+
+	p{
+		display: flex;
+		justify-content: space-between;
+		width: 28rem;
+		margin-bottom: 1.5rem;
+
+		&:hover{
+			color: $lavenderFloral;
+			cursor: pointer;
+		}
+
+		@include responsive(desktop){
+			font-size: 1.6rem;
+		}
+	}
+}

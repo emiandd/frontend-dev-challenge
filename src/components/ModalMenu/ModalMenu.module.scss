@@ -1,0 +1,134 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.modalMenuActive{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0, 0, 0, .76);
+	height: 120vh;
+	width: 100vw;
+	z-index: 50;
+	padding: 10rem 0;
+	overflow-y: auto;
+
+	.modalMenuActive__menu{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $white;
+		height: 17rem;
+		border-radius: 1.5rem;
+		width: 35rem;
+		height: 70rem;
+		z-index: 10;
+		padding-top: 1.4rem;
+
+		.modalMenuActive__top{
+			display: flex;
+			justify-content: center;
+			padding-left: 2rem;
+			border-bottom: .1rem solid $lavenderFloral;
+			height: 7rem;
+		}
+
+		.modalMenuActive__closeMenuIcon{
+			@include closeMenu(mobile);
+			@include bgPosition();
+			position: relative;
+			right: -12rem;
+			cursor: pointer;
+			width: 2rem;
+			height: 2rem;
+		}
+
+	}
+
+}
+
+@include responsive(tablet){
+
+	.modalMenuActive{
+		height: 100vh;
+
+		.modalMenuActive__menu{
+			position: absolute;
+			top: 10rem;
+			width: 70rem;
+			height: 40rem;
+
+			.modalMenuActive__top{
+				border: none;
+				height: 5rem;
+				padding-left: 3.2rem;
+			}
+
+			.modalMenuActive__closeMenuIcon{
+				@include closeMenu(tablet);
+				@include bgPosition();
+				right: -28.3rem;
+				width: 4rem;
+				height: 4rem;
+			}
+
+			.modalMenuAtive__categories{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+
+				div:nth-child(1),
+				div:nth-child(3){
+					padding-right: 2.5rem;
+				}
+
+				div:nth-child(2),
+				div:nth-child(4){
+					border-left: .1rem solid $lavenderFloral;
+					padding-left: 2.5rem;
+				}
+			}
+		}
+	}
+}
+
+@include responsive(desktop){
+
+	.modalMenuActive{
+
+		.modalMenuActive__menu{
+			width: 90rem;
+			.modalMenuAtive__categories{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+
+				div:nth-child(1),
+				div:nth-child(3){
+					padding-right: 10rem;
+				}
+
+				div:nth-child(2),
+				div:nth-child(4){
+					border-left: .1rem solid $lavenderFloral;
+					padding-left: 10rem;
+				}
+			}
+
+			.modalMenuActive__top{
+				border: none;
+				height: 5rem;
+				padding-left: 3.2rem;
+			}
+
+			.modalMenuActive__closeMenuIcon{
+				right: -38.3rem;
+			}
+		}
+	}
+}
+
+.modalMenuInactive{
+	display: none;
+}

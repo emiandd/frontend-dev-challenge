@@ -49,3 +49,15 @@
 	}
 }
 
+@mixin closeMenu($device){
+	$closeMenuMobile: '../assets/icons/close-menu-icon.svg';
+	$closeMenuTablet: '../assets/icons/close-menu-icon-tablet.svg';
+	$closeMenuDesktop: '../assets/icons/close-menu-icon-tablet.svg';
+	@if $device == 'mobile'{
+		background-image: url($closeMenuMobile);
+	}@else if $device == 'tablet'{
+		background-image: url($closeMenuTablet);
+	}@else if $device == 'desktop'{
+		background-image: url($closeMenuDesktop);
+	}
+}

@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import NavBar from '../NavBar/NavBar.jsx';
 import HeroSlider from '../HeroSlider/HeroSlider.jsx';
 import './Header.module.scss';
 
-export default function Header() {
+export default function Header({ modalState, setModalState }) {
+
 
 	const sliderImages = [
 	  'https://i.postimg.cc/fyDyHGSR/hero-slide1.png',
@@ -14,7 +16,7 @@ export default function Header() {
 
 	return (
 		<header>
-			<NavBar />
+			<NavBar modalState={modalState} setModalState={setModalState} />
 			<HeroSlider slides={sliderImages} autoPlay={3} />
 		</header>
 	)
