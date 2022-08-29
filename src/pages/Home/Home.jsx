@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from '../../components/Header/Header.jsx';
 import ModalMenu from '../../components/ModalMenu/ModalMenu.jsx';
+import PopularArticles from '../../sections/PopularArticles/PopularArticles.jsx';
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
 		<>
 			<Header modalState={modalState} setModalState={setModalState} />
 			<ModalMenu modalState={modalState} setModalState={setModalState} />
+			<PopularArticles />
 		</>
 	)
 }

@@ -1,0 +1,51 @@
+@import '../../sass/mixins.scss';
+
+.sectionTitle{
+	text-align: center;
+	font-weight: 500;
+	padding-top: 3rem;
+}
+
+.popularArticles{
+	padding-top: 3rem;
+	padding-bottom: 6rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: .1rem solid orange;
+	height: auto;
+	gap: 5rem;
+
+	h2{
+		margin-bottom: 1rem;
+		font-weight: 500;
+	}
+
+	.popularArticles__horizontalCards{
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+		height: auto;
+	}
+
+}
+
+@include responsive(tablet){
+
+	.popularArticles{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+}
+
+@include responsive(desktop){
+
+	.popularArticles{
+		width: 120rem;
+		margin: 0 auto;
+	}
+
+}

@@ -1,0 +1,91 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.card{
+	height: 15rem;
+	width: 32rem;
+	border-radius: .8rem;
+	display: flex;
+	overflow: hidden;
+	box-shadow: 0 0 2rem -1rem;
+	transition: all .3s ease;
+
+	&:hover{
+		cursor: pointer;
+		transform: scale(1.01);
+
+		.card__leftColor{
+			background: linear-gradient(300deg, $lavenderFloral, $persianPink );
+		}
+
+		.card__description{
+			h5{
+				color: $blueYonder;
+			}
+		}
+	}
+
+	.card__leftColor{
+		width: .7rem;
+		background: linear-gradient(300deg, $persianPink, $lavenderFloral );
+	}
+
+	.card__img{
+		width: 4.5rem;
+		overflow: hidden;
+
+		img{
+			height: 100%;
+			width: auto;
+			position: relative;
+			left: -10rem;
+		}
+
+	}
+
+	.card__description{
+		width: 100%;
+		padding-top: 1rem;
+
+		h6,
+		h5,
+		p{
+			text-align: left;
+			padding: 0 1rem;
+			margin-bottom: .4rem;
+		}
+
+		h6{
+			text-transform: uppercase;
+			color: $persianPink;
+		}
+
+	}
+}
+
+@include responsive(tablet){
+
+	.card{
+		width: 50rem;
+
+		.card__img{
+			width: 17rem;
+
+			img{
+				left: -6rem;
+			}
+		}
+
+		.card__description{
+			padding-top: 2rem;
+			h6,
+			h5,
+			p{
+				text-align: left;
+				padding: 0 1rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+}

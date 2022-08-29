@@ -1,0 +1,47 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.articleMedium{
+	width: 35rem;
+	max-height: 52rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	background-color: $black;
+
+	&:hover{
+		cursor: pointer;
+	}
+
+	.articleMedium__legend{
+		padding-top: 1rem;
+		color: $white;
+		height: 100%;
+		text-align: left;
+		padding: .5rem 1rem;
+
+		p{
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@include responsive(tablet){
+	.articleMedium{
+		width: 50rem;
+		height: 49.6rem;
+
+		.articleMedium__img{
+			height: 45rem;
+			overflow: hidden;
+
+			img{
+				height: 66rem;
+				width: auto;
+			}
+		}
+		.articleMedium__legend{
+			padding-top: 1.5rem;
+		}
+	}
+
+}

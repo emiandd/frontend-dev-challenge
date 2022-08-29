@@ -1,0 +1,9 @@
+@import '../../sass/mixins.scss';
+
+@include responsive(desktop){
+
+	.publicity{
+		display: none;
+	}
+
+}
