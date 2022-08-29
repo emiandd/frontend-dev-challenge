@@ -27,12 +27,15 @@
 	$logoMobile: '../assets/img/logo-mobile.svg';
 	$logoTablet: '../assets/img/logo-tablet.svg';
 	$logoDesktop: '../assets/img/logo-desktop.svg';
+	$logoFooter: '../assets/img/logo-footer.svg';
 	@if $device == 'mobile'{
 		background-image: url($logoMobile);
 	}@else if $device == 'tablet'{
 		background-image: url($logoTablet);
 	}@else if $device == 'desktop'{
 		background-image: url($logoDesktop);
+	}@else if $device == 'footer'{
+		background-image: url($logoFooter);
 	}
 }
 

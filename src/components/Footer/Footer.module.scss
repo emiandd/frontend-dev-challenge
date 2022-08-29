@@ -1,0 +1,49 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.footer{
+	background-color: $blueYonder;
+	height: 42.3rem;
+
+	color: $white;
+	margin: 0 auto;
+	padding: 0 4rem;
+	padding-top: 5rem;
+
+	div p{
+		text-align: center;
+		margin-bottom: 1rem;
+		cursor: pointer;
+	}
+
+
+	.logoFooter{
+		@include logo(footer);
+		@include bgPosition();
+		width: 25.6rem;
+		height: 3.8rem;
+		margin: 3rem 0;
+
+		@include responsive(tablet){
+			margin-left: 20rem;
+		}
+	}
+
+}
+
+@include responsive(desktop){
+	.footer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	    .logoFooter{
+	    	margin: 2rem 0;
+		}
+
+		.copyright{
+			width: 40rem;
+		}
+
+	}
+}
