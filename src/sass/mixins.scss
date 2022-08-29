@@ -1,0 +1,53 @@
+@mixin responsive($size){
+	@if $size == 'mobile'{
+		$size: 768px;
+		@media screen and (max-width: $size){
+			@content
+		}
+	}@else if $size == 'tablet'{
+		$size: 768px;
+		@media screen and (min-width: $size){
+			@content
+		}
+	}@else if $size == 'desktop'{
+		$size: 1200px;
+		@media screen and (min-width: $size){
+			@content
+		}
+	}
+}
+
+@mixin bgPosition{
+	background-size: fill;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@mixin logo($device){
+
+	$logoMobile: '../assets/img/logo-mobile.svg';
+	$logoTablet: '../assets/img/logo-tablet.svg';
+	$logoDesktop: '../assets/img/logo-desktop.svg';
+
+	@if $device == 'mobile'{
+		background-image: url($logoMobile);
+	}@else if $device == 'tablet'{
+		background-image: url($logoTablet);
+	}@else if $device == 'desktop'{
+		background-image: url($logoDesktop);
+	}
+
+}
+
+@mixin burgerMenu($device){
+	$menuMobile: '../assets/icons/burger-menu.svg';
+	$menuTablet: '../assets/icons/burger-menu-tablet.svg';
+	$menuDesktop: '../assets/icons/burger-menu-tablet.svg';
+	@if $device == 'mobile'{
+		background-image: url($menuMobile);
+	}@else if $device == 'tablet'{
+		background-image: url($menuTablet);
+	}@else if $device == 'desktop'{
+		background-image: url($menuDesktop);
+	}
+}
