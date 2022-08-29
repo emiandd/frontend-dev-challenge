@@ -1,0 +1,70 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.testimonialTitle{
+  background: linear-gradient(270deg, $white 10%, $cultured);
+}
+
+.testimonial{
+  background: linear-gradient(270deg, $white 10%, $cultured);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60rem;
+
+  .quoteIcon{
+    padding-top: 4rem;
+    width: 4rem;
+  }
+  
+  .myCarousel{
+    padding: 0 6.7rem;
+    background-color: white;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+
+    p{
+      font-size: 1.6rem;
+      margin-top: 2.6rem;
+      line-height: 3rem;
+    }
+
+    h5{
+      margin-top: 2.6rem;
+    }
+
+  }
+
+}
+
+@include responsive(tablet){
+
+  .testimonial{
+    height: 40rem;
+
+    .myCarousel{
+      width: 55.8rem;
+    }
+
+  }
+
+}
+
+@include responsive(desktop){
+
+  .testimonial{
+
+    .myCarousel{
+      width: 105rem;
+      padding: 0 30rem;
+      height: 30.6rem;
+    }
+
+  }
+
+}
+
