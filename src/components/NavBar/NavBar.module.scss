@@ -1,0 +1,125 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.nav{
+	background-color: $white;
+	border: .1rem solid green;
+	height: 8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3rem;
+
+	.nav__logo{
+		@include logo(mobile);
+		@include bgPosition();
+		width: 4.8rem;
+		height: 4rem;
+	}
+
+	.nav__input{
+		display: flex;
+		align-items: center;
+		border-radius: .5rem;
+		border: none;
+		border: .1rem solid $lavenderFloral;
+		overflow: hidden;
+
+
+		input[type="text"]{
+			height: 4rem;
+			width: 15rem;
+			border: none;
+			font-size: 1.4rem;
+			padding-left: 1.6rem;
+			outline: none;
+			padding-top: 1rem;
+		}
+
+		button{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			height: 3.4rem;
+			width: 3.3rem;
+			background-color: $lavenderFloral;
+			font-size: .7rem;
+			border-radius: .5rem;
+			margin-right: .3rem;
+
+			&:hover{
+				cursor: pointer;
+				opacity: .9;
+			}
+		}
+	}
+
+	.nav__burgerMenu{
+		width: 4rem;
+		height: 2.3rem;
+		@include burgerMenu(mobile);
+		@include bgPosition();
+
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+@include responsive(tablet){
+	.nav{
+		height: 9rem;
+		padding: 0 5rem;
+
+		.nav__logo{
+			@include logo(tablet);
+			width: 20rem;
+			height: 4rem;
+
+		}
+
+		.nav__input{
+
+			input[type="text"]{
+				height: 5rem;
+				width: 30.4rem;
+				font-size: 1.6rem;
+				padding-top: .4rem;
+			}
+
+			button{
+				margin-right: .7rem;
+			}
+
+		}
+
+		.nav__burgerMenu{
+			width: 4.9rem;
+			height: 4rem;
+			@include burgerMenu(tablet);
+			@include bgPosition();
+		}
+		
+	}
+}
+
+@include responsive(desktop){
+	.nav{
+
+		.nav__logo{
+			@include logo(desktop);
+			width: 25.6rem;
+			height: 4rem;
+
+		}
+
+		.nav__input{
+			input[type="text"]{
+				width: 50rem;
+				font-size: 1.6rem;
+				padding-top: .4rem;
+			}
+		}
+	}
+}
