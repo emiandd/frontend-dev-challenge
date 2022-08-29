@@ -1,0 +1,24 @@
+@import '../../../sass/mixins.scss';
+
+.slide{
+	width: 100vw;
+	img{
+		height: 14.3rem;
+	}
+}
+
+@include responsive(tablet){
+	.slide{
+		img{
+			height: 29.3rem;
+		}
+	}
+}
+
+@include responsive(desktop){
+	.slide{
+		img{
+			height: 64rem;
+		}
+	}
+}

@@ -24,11 +24,9 @@
 }
 
 @mixin logo($device){
-
 	$logoMobile: '../assets/img/logo-mobile.svg';
 	$logoTablet: '../assets/img/logo-tablet.svg';
 	$logoDesktop: '../assets/img/logo-desktop.svg';
-
 	@if $device == 'mobile'{
 		background-image: url($logoMobile);
 	}@else if $device == 'tablet'{
@@ -36,7 +34,6 @@
 	}@else if $device == 'desktop'{
 		background-image: url($logoDesktop);
 	}
-
 }
 
 @mixin burgerMenu($device){
@@ -51,3 +48,4 @@
 		background-image: url($menuDesktop);
 	}
 }
+
