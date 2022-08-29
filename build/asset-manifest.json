@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8549657c.css",
+    "main.js": "/static/js/main.7be44ef4.js",
+    "static/media/article-medium.png": "/static/media/article-medium.4501c09db5a0932bb816.png",
+    "static/media/faqs-image.svg": "/static/media/faqs-image.900dce53ba57d56d93d0fce3deb6a490.svg",
+    "static/media/publicity-mobile.png": "/static/media/publicity-mobile.277c4d08eb1394fcf034.png",
+    "static/media/publicity-desktop.png": "/static/media/publicity-desktop.0ad330661827a04458a5.png",
+    "static/media/logo-desktop.svg": "/static/media/logo-desktop.0d4b6a5ec9d191e6f9e6.svg",
+    "static/media/logo-tablet.svg": "/static/media/logo-tablet.8a73149511081291955e.svg",
+    "static/media/logo-footer.svg": "/static/media/logo-footer.7c3497174fa1a2c12479.svg",
+    "static/media/logo-mobile.svg": "/static/media/logo-mobile.8de431a8ca933964a68a.svg",
+    "static/media/logo-menu-icon.svg": "/static/media/logo-menu-icon.06dd5d4739a8f056d64552edf11e3273.svg",
+    "index.html": "/index.html",
+    "static/media/search-icon.svg": "/static/media/search-icon.be806545e117ea35e24ce0ebe981135e.svg",
+    "static/media/burger-menu.svg": "/static/media/burger-menu.66a9dbc0cb1c0af92f2e.svg",
+    "static/media/close-menu-icon.svg": "/static/media/close-menu-icon.28808a28641eaa0faac206ab2c702e49.svg",
+    "static/media/close-menu-icon-tablet.svg": "/static/media/close-menu-icon-tablet.1fbf916649d405c41b56.svg",
+    "static/media/right-arrow-menu.svg": "/static/media/right-arrow-menu.f9c9c28af114e549caa73fd51c0b170d.svg",
+    "static/media/faqs-arrow.svg": "/static/media/faqs-arrow.d3689c8ac3dbc67450efcc95e5c3c6fa.svg",
+    "static/media/burger-menu-tablet.svg": "/static/media/burger-menu-tablet.d11935e1178926919573.svg",
+    "main.8549657c.css.map": "/static/css/main.8549657c.css.map",
+    "main.7be44ef4.js.map": "/static/js/main.7be44ef4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8549657c.css",
+    "static/js/main.7be44ef4.js"
+  ]
+}
