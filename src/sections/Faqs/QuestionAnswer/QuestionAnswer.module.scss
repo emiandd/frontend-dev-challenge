@@ -1,0 +1,71 @@
+@import '../../../sass/variables.scss';
+@import '../../../sass/mixins.scss';
+
+.hidden{
+	display: none;
+}
+
+.container{
+		display: flex;
+		padding: 0 2rem;
+		
+		.container__questionAnswer{
+			border-bottom: .1rem solid $lavenderFloral;
+			margin-bottom: 1rem;
+		}
+
+		.container__answer{
+			display: block;
+		}
+
+		.container__arrow{
+			position: relative;
+			top: 2rem;
+			cursor: pointer;
+		}
+
+		.container__arrowUp{
+			transform: rotate(180deg);
+			position: relative;
+			top: -11rem;
+		}
+}
+
+@include responsive(tablet){
+
+	.container{
+		justify-content: center;
+		padding: 0 13rem;
+
+		.container__questionAnswer{
+			margin-right: 4rem;
+		}
+
+		.container__arrow{
+			top: 1rem;
+		}
+
+		.container__arrowUp{
+			top: -6rem;
+			right: 1.3rem;
+		}
+	}
+
+}
+
+@include responsive(desktop){
+
+	.container{
+		display: flex;
+		flex-direction: column;
+
+		.container__answer{
+			width: 49rem;
+		}
+
+		.container__arrow{
+			top: -3rem;
+			right: -50rem;
+		}
+	}
+}

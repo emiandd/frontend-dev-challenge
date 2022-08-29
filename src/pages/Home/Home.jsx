@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header.jsx';
 import ModalMenu from '../../components/ModalMenu/ModalMenu.jsx';
 import PopularArticles from '../../sections/PopularArticles/PopularArticles.jsx';
 import Testimonial from '../../sections/Testimonial/Testimonial.jsx';
+import Faqs from '../../sections/Faqs/Faqs.jsx';
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
 			<ModalMenu modalState={modalState} setModalState={setModalState} />
 			<PopularArticles />
 			<Testimonial />
+			<Faqs />
 		</>
 	)
 }
